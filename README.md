@@ -10,7 +10,7 @@
 
 # How to use
 
-### 資料集
+### 資料集(download: https://www.kaggle.com/datasets/datamunge/virusmnist/data)
 使用資料集為 **Virus-MNIST**，此資料集共有10個類別有分訓練及測試樣本，第0類為正常樣本，其餘9類為惡意樣本
 訓練資料集使用惡意樣本的其中6類(在資料夾顯示為1~6)
 測試資料集使用全部測試樣本(共10類)。 註:上傳的10類test資料的資料夾10為正常樣本，如果是官網下載資料夾0是正常樣本
