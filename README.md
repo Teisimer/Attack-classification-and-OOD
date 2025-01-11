@@ -1,5 +1,5 @@
-# Attack-classification-and-OOD
-EfficientNet and Mahalanobis distance 
+# Attack-classification-and-OOD\
+
 本專案使用 EfficientNet作已知攻擊分類並使用馬氏距離（Mahalanobis Distance) 進行異常檢測，包含以下功能：
 * 從輸入資料中提取特徵。
 * 計算正常樣本的馬氏距離並使用不同的閾值（平均值、中位數、最大值）進行測試。
@@ -10,4 +10,15 @@ EfficientNet and Mahalanobis distance
 
 # How to use
 
-## 資料集
+### 資料集
+使用資料集為 **Virus-MNIST**，此資料集共有10個類別有分訓練及測試樣本，第0類為正常樣本，其餘9類為惡意樣本
+訓練資料集使用惡意樣本的其中6類(在資料夾顯示為1~6)
+測試資料集使用全部測試樣本(共10類)。 註:上傳的10類test資料的資料夾10為正常樣本，如果是官網下載資料夾0是正常樣本
+
+### 訓練
+用6類惡意樣本作訓練，並在驗證中找尋每個類別的置信度閾值用於後續分類others類別的依據
+### 測試
+用全部測試樣本，若置信度小於閥值則被分到others類別
+
+### mahalanobis distance
+
